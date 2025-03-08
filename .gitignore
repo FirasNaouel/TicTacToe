@@ -2,7 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-Dockerfile
+
 
 ### Eclipse ###
 .apt_generated
