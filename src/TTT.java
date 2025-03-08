@@ -87,7 +87,7 @@ class TTT {
     private void playGame() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to Tic-Tac-Toe!");
-        System.out.println("Input syntax must follow this format: \"1 1\" for example or \"2 3\".");
+        System.out.println("Input syntax must follow this format: \"1 1\" for example or \"2 3\" test.");
         System.out.println("Have fun!");
 
         while (!gameOver) {
