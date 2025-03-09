@@ -1,9 +1,12 @@
 FROM openjdk:23-jdk-slim
 
-COPY ./out/production/tictactoe/ /tmp
+WORKDIR /app
 
-WORKDIR /tmp
+# Copy Java source files into the container
+COPY ./src/ /app/
 
-CMD ["javac", "Main.java"]
+# Compile Java files at build time
+RUN javac Main.java
 
-ENTRYPOINT ["java","Main"]
+# Set the default command to run the Java program
+CMD ["java", "Main"]
